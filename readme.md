@@ -2,7 +2,7 @@
 Créez un programme qui permet de jouer avec des dés, d'effectuer un lancer (de 2 dés) et de ressortir les informations suivantes sur chaque lancé : 
 - valeur dé 1
 - valeur dé 2
-- est-ce une paire ?
+- est-ce un double ?
 - somme des deux dés
 - produit des deux dés
 
