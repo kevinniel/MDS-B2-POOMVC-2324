@@ -15,7 +15,7 @@ Réalisez un programme permettant de scrapper les informations d'une bibliothèq
 Vous devez être capable de récupérer toutes les informations possibles sur un livre (prix, info, description, url image, etc...)
 
 ## Étape 2
-gérer la même chose sur un nombre illimité d'URL => vous devez automatiser la récupération de toutes les URLs
+gérer la même chose sur un nombre illimité d'URL => vous devez automatiser la récupération de toutes les URLs pour une catégorie donnée
 
 ## Étape 3
 Mise en place d'une architecture MVC
