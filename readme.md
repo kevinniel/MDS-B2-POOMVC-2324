@@ -43,7 +43,7 @@ Vous devez être capable de récupérer toutes les informations possibles sur un
 gérer la même chose sur un nombre illimité d'URL => vous devez automatiser la récupération de toutes les URLs pour une catégorie donnée
 
 ## Étape 3
-Sauvegarder toutes les informations en BDD
+Sauvegarder toutes les informations en BDD (MySQL)
 
 ## Étape 4
 Mise en place d'une architecture MVC
