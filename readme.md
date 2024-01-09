@@ -1,5 +1,5 @@
 # TP bases POO
-Créez un programme qui permet de jouer avec des dés, d'effectuer un lancer et de ressortir les informations suivantes sur chaque lancé : 
+Créez un programme qui permet de jouer avec des dés, d'effectuer un lancer (de 2 dés) et de ressortir les informations suivantes sur chaque lancé : 
 - valeur dé 1
 - valeur dé 2
 - est-ce une paire ?
