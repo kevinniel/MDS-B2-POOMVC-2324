@@ -29,3 +29,23 @@ tab = [
 ```
 
 Identifier l'action avec le plus de rendement
+
+### actions bourse FONCTION
+soit le tableau suivant : 
+
+```python
+tab = [
+    # [nom, prix, rendement]
+    ["a", 120, "12.3%"],
+    ["b", 10, "11.5%"],
+    ["c", 26, "10.9%"],
+    ["d", 390, "11.8%"],
+    ["e", 225, "11.7%"],
+    ["f", 89, "12.1%"],
+]
+```
+
+Soit une fonction ```toto()``` qui prend en paramètre une valeur monétaire.
+Les rendements sont versés anuellement.
+On ne peut acheter qu'une seule action, mais autant de fois qu'on veut.
+Calculez, à partir d'un montant donné (le paramètre), l'action la plus rentable à acheter en fonction de votre budget (= le paramètre)

@@ -29,3 +29,17 @@ for elt in tab:
     if elt[2] > rep[2]:
         rep = elt
 print('L\'action avec le plus de rendement est l\'action', rep[0])
+
+
+
+# Exo 4
+tab = [
+    # [nom, prix, rendement]
+    ["a", 120, "12%"],
+    ["b", 10, "25%"],
+    ["c", 26, "44%"],
+    ["d", 390, "10%"],
+    ["e", 225, "26%"],
+    ["f", 89, "38%"],
+]
+# TODO
