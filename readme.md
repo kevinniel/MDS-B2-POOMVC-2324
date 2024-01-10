@@ -46,4 +46,8 @@ gérer la même chose sur un nombre illimité d'URL => vous devez automatiser la
 Sauvegarder toutes les informations en BDD (MySQL)
 
 ## Étape 4
-Mise en place d'une architecture MVC
+Mise en place d'une architecture MVC. Mise en place d'un menu simple qui propose : 
+- de scrapper le site web à partir de l'url fournie par l'utilisateur
+- rechercher 1 livre sur la BDD (sans scrap) et d'afficher son contenu
+- vider la base de données
+- Quitter le programme
