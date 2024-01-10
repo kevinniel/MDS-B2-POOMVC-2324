@@ -47,6 +47,6 @@ class Main:
             print(f"La meilleure action à acheter est '{meilleure_action.name}' avec un rendement annuel de {meilleur_rendement:.1f} euros.")
         else:
             print("Aucune action n'est disponible avec le budget fourni.")
- 
+
 if __name__ == "__main__":
     Main()
