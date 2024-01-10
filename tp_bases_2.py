@@ -13,6 +13,7 @@ class Action:
         nb_actions_achetables = budget // self.price
         return nb_actions_achetables * self.rendement_euros
 
+
 class Main:
 
     tab = [
@@ -25,26 +26,37 @@ class Main:
     ]
 
     def __init__(self):
-        self.budget = self.demande_budget()
-        self.action_la_plus_rentable()
+        self.budget = self.__demande_budget()
+        self.transform_tab_to_actions()
+        self.meilleure_action, self.meilleur_rendement = self.__action_la_plus_rentable()
+        self.__reponse_action_la_plus_rentable()
 
-    def demande_budget(self):
+    def transform_tab_to_actions(self):
+        t = []
+        for info_action in self.tab:
+            t.append(Action(*info_action))
+        self.tab = t
+
+    def __demande_budget(self):
         return int(input("Quel est votre budget :"))
 
-    def action_la_plus_rentable(self):
+    def __action_la_plus_rentable(self):
         meilleure_action = None
         meilleur_rendement = 0
 
-        for info_action in self.tab:
-            action = Action(*info_action)
+        for action in self.tab:
             rendement_annuel = action.calculer_rendement_annuel_max(self.budget)
 
             if rendement_annuel > meilleur_rendement:
                 meilleur_rendement = rendement_annuel
                 meilleure_action = action
 
-        if meilleure_action:
-            print(f"La meilleure action à acheter est '{meilleure_action.name}' avec un rendement annuel de {meilleur_rendement:.1f} euros.")
+        # éviter autant que possible les retours multiples
+        return meilleure_action, meilleur_rendement
+
+    def __reponse_action_la_plus_rentable(self):
+        if self.meilleure_action:
+            print(f"La meilleure action à acheter est '{self.meilleure_action.name}' avec un rendement annuel de {self.meilleur_rendement:.1f} euros.")
         else:
             print("Aucune action n'est disponible avec le budget fourni.")
 
